@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>NLC_Code_Project</title>
+
+<!-- Import ZAF SDK-->
+<script src="https://assets.zendesk.com/apps/sdk/2.0/zaf_sdk.js"></script>
+</head>
+
+<body>	
+    <h1>NLC Ticket Retrieval</h1>
+	
+    <form id="NLC_Input" action="getData.php" method="get" target="browser">
+	    NLC Code: <input type="text" name="NLC_Code_Input"><br>
+    	<input type="submit" value="post">
+	</form>
+	
+    <iframe class="NLC_Widget" src="getData.php">
+    </iframe>	
+</body>
+</html>
